@@ -6,7 +6,7 @@
     <title>Consulta Dental</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#EAEDF3]">
+  <header class="bg-[#EAEDF3]">
     <div class="Pagina1 px-20 pt-20">
       <div
         class="Menu1 flex justify-between items-center border-[3px] border-[#7ba5c3] px-10 py-3 bg-white rounded-full max-w-[620px] shadow-md relative"
@@ -75,17 +75,17 @@
 
         <div class="Imagen1 flex justify-end -mt-40">
           <img
-            src="https://github.com/valeval7/Practicas/blob/main/12%20Desarrollo%20de%20Página%20Web/Resources/1.png?raw=tru"
+            src="Resources/1.svg"
             alt="Imagen de nuestra paciente"
             class="w-[480px] h-auto"
           />
         </div>
       </div>
     </div>
-    <div class="Pagina2 px-20 pt-20">
-      <div
-        class="Menu2 flex justify-between items-center border-[3px] border-[#7ba5c3] px-10 py-3 bg-white rounded-full shadow-md"
-      >
+    <div class="Pagina2 px-20 pt-20 relative">
+      <header class="sticky top-6 z-20">
+      <div class="Menu2 flex justify-between items-center border-[3px] border-[#7ba5c3] px-10 py-3 bg-white rounded-full shadow-md backdrop-blur-sm"
+    >
         <img
           src="https://raw.githubusercontent.com/valeval7/Practicas/6df9610117feb8eb1597c6999923c24b514a291e/12%20Desarrollo%20de%20Página%20Web/Resources/DentalCare.svg"
           alt="DentalCare MX Logo"
@@ -108,7 +108,9 @@
             >Sobre nosotros</a
           >
         </nav>
+        
       </div>
+      </header>
       <div class="Texto2 mt-10 text-center">
         <h1 class="text-[#5175A0] font-bold mb-4 leading-[1.15] text-[56px]">
           Servicios
@@ -216,7 +218,51 @@
           completas.
         </p>
       </div>
+      <div class="Galeria2 flex gap-8 justify-center px-12 mt-16">
+        <div
+          class="w-80 bg-[#EEEDF2] border-2 border-[#7F99C9] rounded-3xl p-8 text-center"
+        >
+          <img
+            src="Resources/Persona1.svg"
+            alt="General"
+            class="w-full h-64 object-cover rounded-2xl mb-4"
+          />
+          <h3 class="text-[#5175A0] text-xl font-bold mb-2">General</h3>
+          <p class="text-[#5175A0] text-sm">
+            Limpiezas, exámenes, empastes y tratamientos preventivos.
+          </p>
+        </div>
+
+        <div
+          class="w-80 bg-[#F0EEED] border-2 border-[#7F99C9] rounded-3xl p-8 text-center"
+        >
+          <img
+            src="Resources/Persona2.svg"
+            alt="Restaurativa"
+            class="w-full h-64 object-cover rounded-2xl mb-4"
+          />
+          <h3 class="text-[#5175A0] text-xl font-bold mb-2">Restaurativa</h3>
+          <p class="text-[#5175A0] text-sm">
+            Recupera la función y estética con implantes, coronas y endodoncias.
+          </p>
+        </div>
+
+        <div
+          class="w-80 bg-[#FCFAFA] border-2 border-[#7F99C9] rounded-3xl p-8 text-center"
+        >
+          <img
+            src="Resources/Persona3.png"
+            alt="Cosmética"
+            class="w-full h-64 object-cover rounded-2xl mb-4"
+          />
+          <h3 class="text-[#5175A0] text-xl font-bold mb-2">Cosmética</h3>
+          <p class="text-[#5175A0] text-sm">
+            Blanqueamiento, carillas y diseño de sonrisa personalizado.
+          </p>
+        </div>
+      </div>
     </div>
+  </header>
 
     <script>
       const menuBtn = document.getElementById("menuBtn");
