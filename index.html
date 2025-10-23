@@ -5,28 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consulta Dental</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
   </head>
   <body class="bg-[#EAEDF3]">
     <div class="PaginaPrincipal">
       <!-- Pagina1:"Presentación" -->
-      <div class="Pagina1 px-20 pt-20 w-auto h-[832px]">
+      <div
+        class="Pagina1 px-4 sm:px-8 md:px-12 lg:px-20 pt-8 sm:pt-12 md:pt-16 lg:pt-20 w-auto min-h-screen"
+      >
         <div
-          class="Menu1 flex justify-between items-center border-[3px] border-[#7ba5c3] px-10 py-3 bg-white rounded-full max-w-[620px] shadow-md relative"
+          class="Menu1 flex justify-between items-center border-[3px] border-[#7ba5c3] px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 bg-white rounded-full max-w-full lg:max-w-[620px] shadow-md relative"
         >
           <div>
             <img
               src="https://raw.githubusercontent.com/valeval7/Practicas/6df9610117feb8eb1597c6999923c24b514a291e/12%20Desarrollo%20de%20Página%20Web/Resources/DentalCare.svg"
               alt="DentalCare MX Logo"
-              class="h-[60px]"
+              class="h-[35px] sm:h-[45px] md:h-[55px] lg:h-[60px]"
             />
           </div>
           <button
             id="menuBtn"
             class="flex flex-col gap-1.5 hover:opacity-70 transition-opacity"
           >
-            <span class="w-8 h-0.5 bg-[#7ba5c3] rounded"></span>
-            <span class="w-8 h-0.5 bg-[#7ba5c3] rounded"></span>
-            <span class="w-8 h-0.5 bg-[#7ba5c3] rounded"></span>
+            <span class="w-6 sm:w-7 md:w-8 h-0.5 bg-[#7ba5c3] rounded"></span>
+            <span class="w-6 sm:w-7 md:w-8 h-0.5 bg-[#7ba5c3] rounded"></span>
+            <span class="w-6 sm:w-7 md:w-8 h-0.5 bg-[#7ba5c3] rounded"></span>
           </button>
           <div
             id="menuDropdown"
@@ -52,51 +63,61 @@
           </div>
         </div>
 
-        <div class="Texto1 flex items-start justify-between mt-20 px-12">
-          <div class="max-w-[600px]">
+        <div
+          class="Texto1 flex flex-col lg:flex-row items-center lg:items-start justify-between mt-8 sm:mt-12 md:mt-16 lg:mt-20 px-4 sm:px-6 md:px-8 lg:px-12 gap-8 lg:gap-0"
+        >
+          <div class="w-full lg:max-w-[600px] text-center lg:text-left">
             <h1 class="text-[#5175A0] font-bold mb-6 leading-[1.15]">
-              <span class="text-[56px]">
+              <span
+                class="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px] block"
+              >
                 Cuidando tu
                 <span class="italic font-normal"> Sonrisa</span>,
               </span>
-              <br />
-              <span class="text-[56px]">Visita tras Visita.</span>
+              <span
+                class="text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px] block mt-1"
+                >Visita tras Visita.</span
+              >
             </h1>
             <p
-              class="text-[#5175A0] text-[17px] mb-8 leading-relaxed max-w-[500px]"
+              class="text-[#5175A0] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] mb-6 sm:mb-7 md:mb-8 leading-relaxed max-w-full lg:max-w-[500px] mx-auto lg:mx-0"
             >
               Tu sonrisa es mucho más que una expresión, es el reflejo de tu
               confianza, tu salud y tu bienestar.
             </p>
             <button
-              class="bg-[#5DABDA] hover:bg-[#4a9ac4] text-white font-semibold py-4 px-8 rounded-full shadow-md transition-all inline-flex items-center gap-2"
+              class="bg-[#5DABDA] hover:bg-[#4a9ac4] text-white font-semibold py-3 sm:py-3.5 md:py-4 px-6 sm:px-7 md:px-8 rounded-full shadow-md transition-all inline-flex items-center gap-2 text-sm sm:text-base"
             >
               Agendar cita
             </button>
           </div>
 
-          <div class="Imagen1 flex justify-end -mt-40">
+          <div
+            class="Imagen1 flex justify-center lg:justify-end w-full lg:w-auto lg:-mt-40"
+          >
             <img
               src="https://raw.githubusercontent.com/valeval7/Practicas/8445316a8a587a253482d54da9593ef4a5241ab2/12%20Desarrollo%20de%20Página%20Web/Resources/1.svg"
               alt="Imagen de nuestra paciente"
-              class="w-[480px] h-auto"
+              class="w-[250px] sm:w-[300px] md:w-[400px] lg:w-[480px] h-auto"
             />
           </div>
         </div>
       </div>
 
       <!-- Pagina:"Galeria, Soluciones, Consultorio" -->
-      <div class="Pagina2 px-20 pt-20 h-[1800px]">
+      <div
+        class="Pagina2 px-4 sm:px-8 md:px-12 lg:px-20 pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-12 min-h-screen"
+      >
         <header class="sticky top-0 z-20">
           <div
-            class="Menu2 flex justify-between items-center border-[3px] border-[#7ba5c3] px-10 py-3 bg-white rounded-full shadow-md backdrop-blur-sm"
+            class="Menu2 flex justify-between items-center border-[3px] border-[#7ba5c3] px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 bg-white rounded-full shadow-md backdrop-blur-sm relative"
           >
             <img
               src="https://raw.githubusercontent.com/valeval7/Practicas/6df9610117feb8eb1597c6999923c24b514a291e/12%20Desarrollo%20de%20Página%20Web/Resources/DentalCare.svg"
               alt="DentalCare MX Logo"
-              class="h-[60px]"
+              class="h-[35px] sm:h-[45px] md:h-[55px] lg:h-[60px]"
             />
-            <nav class="flex gap-8">
+            <nav class="hidden lg:flex gap-6 xl:gap-8">
               <a
                 href="#sonrisa"
                 class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
@@ -113,23 +134,35 @@
                 >Sobre nosotros</a
               >
             </nav>
+            <button
+              id="menuBtn2"
+              class="lg:hidden flex flex-col gap-1.5 hover:opacity-70 transition-opacity"
+            >
+              <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
+              <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
+              <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
+            </button>
           </div>
         </header>
         <div class="Texto2 mt-10 text-center">
-          <h1 class="text-[#5175A0] font-bold mb-4 leading-[1.15] text-[56px]">
+          <h1
+            class="text-[#5175A0] font-bold mb-3 sm:mb-4 leading-[1.15] text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px]"
+          >
             Servicios
           </h1>
           <p
-            class="text-[#5175A0] text-[20px] italic font-normal max-w-[1035px] mx-auto"
+            class="text-[#5175A0] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] italic font-normal max-w-full sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1035px] mx-auto px-4"
           >
             Transforma tu sonrisa con tecnología de vanguardia y cuidado
             excepcional. Tu bienestar es nuestra prioridad.
           </p>
 
-          <div class="Galeria1 relative mt-10 px-6">
+          <div
+            class="Galeria1 relative mt-6 sm:mt-8 md:mt-10 px-0 sm:px-2 md:px-4 lg:px-6"
+          >
             <!-- Flecha izquierda -->
             <button
-              class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all"
+              class="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 md:p-3 shadow-lg hover:shadow-xl transition-all"
             >
               <svg
                 class="w-6 h-6 text-[#5175A0]"
@@ -147,14 +180,16 @@
             </button>
 
             <div class="overflow-x-auto pb-6 hide-scrollbar">
-              <div class="flex gap-6 justify-center px-12">
+              <div
+                class="flex gap-4 sm:gap-5 md:gap-6 justify-start lg:justify-center px-4 sm:px-8 md:px-12 min-w-max lg:min-w-0"
+              >
                 <div
                   class="group cursor-pointer transition-transform duration-300 hover:scale-105"
                 >
                   <img
                     src="https://raw.githubusercontent.com/valeval7/Practicas/8445316a8a587a253482d54da9593ef4a5241ab2/12%20Desarrollo%20de%20Página%20Web/Resources/odontologia.svg"
                     alt="Odontología General"
-                    class="h-36 w-auto"
+                    class="h-20 sm:h-28 md:h-32 lg:h-36 w-auto"
                   />
                 </div>
 
@@ -223,14 +258,16 @@
           completas.
         </p>
       </div>
-      <div class="Galeria2 flex gap-8 justify-center px-12 mt-16">
+      <div
+        class="Galeria2 flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap gap-5 sm:gap-6 md:gap-8 justify-center items-center px-4 sm:px-6 md:px-8 lg:px-12 mt-8 sm:mt-10 md:mt-12 lg:mt-16"
+      >
         <div
-          class="w-80 bg-[#EEEDF2] border-2 border-[#7F99C9] rounded-3xl p-8 text-center"
+          class="w-full sm:w-[calc(50%-12px)] lg:w-72 xl:w-80 bg-[#EEEDF2] border-2 border-[#7F99C9] rounded-3xl p-5 sm:p-6 md:p-8 text-center"
         >
           <img
             src="https://raw.githubusercontent.com/valeval7/Practicas/8445316a8a587a253482d54da9593ef4a5241ab2/12%20Desarrollo%20de%20Página%20Web/Resources/Persona1.svg"
             alt="General"
-            class="w-full h-64 object-cover rounded-2xl mb-4"
+            class="w-full h-44 sm:h-48 md:h-56 lg:h-64 object-cover rounded-2xl mb-3 sm:mb-4"
           />
           <h3 class="text-[#5175A0] text-xl font-bold mb-2">General</h3>
           <p class="text-[#5175A0] text-sm">
@@ -266,8 +303,10 @@
           </p>
         </div>
       </div>
-      <div class="px-20 pt-20">
-        <div class="flex gap-16">
+      <div class="px-4 sm:px-6 md:px-12 lg:px-20 pt-12 sm:pt-16 md:pt-20 pb-8">
+        <div
+          class="flex flex-col lg:flex-row gap-8 sm:gap-10 md:gap-12 lg:gap-16"
+        >
           <div class="w-[450px] mt-7">
             <h1 class="text-[#5175A0] font-bold text-[56px] mb-6 leading-tight">
               VISÍTANOS
@@ -322,17 +361,19 @@
             </div>
           </div>
 
-          <div class="relative">
+          <div class="relative w-full lg:flex-1">
             <img
               src="https://raw.githubusercontent.com/valeval7/Practicas/8445316a8a587a253482d54da9593ef4a5241ab2/12%20Desarrollo%20de%20Página%20Web/Resources/clinica.svg"
               alt="Clínica Dental"
-              class="w-[1200px] h-[512px]"
+              class="w-full h-auto max-h-[300px] sm:max-h-[350px] md:max-h-[450px] lg:max-h-[512px] object-cover rounded-2xl lg:rounded-3xl"
             />
 
             <div
-              class="absolute bottom-10 right-10 bg-white rounded-[24px] shadow-2xl p-8 w-[300px]"
+              class="absolute bottom-3 sm:bottom-4 md:bottom-6 lg:bottom-10 right-3 sm:right-4 md:right-6 lg:right-10 bg-white rounded-[16px] sm:rounded-[20px] md:rounded-[24px] shadow-2xl p-3 sm:p-4 md:p-6 lg:p-8 w-[160px] sm:w-[200px] md:w-[250px] lg:w-[300px]"
             >
-              <h3 class="text-[#5175A0] font-bold text-[22px] mb-6">
+              <h3
+                class="text-[#5175A0] font-bold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px] mb-2 sm:mb-3 md:mb-4 lg:mb-6"
+              >
                 Días laborales
               </h3>
               <div class="flex items-center gap-3 mb-4 text-[#5175A0]">
@@ -373,7 +414,9 @@
       </div>
     </div>
     <!-- Pagina:"Agendar cita" -->
-    <div class="Pagina3 hidden px-20 pt-20">
+    <div
+      class="Pagina3 hidden px-4 sm:px-8 md:px-12 lg:px-20 pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-12"
+    >
       <header class="sticky top-0 z-20 mb-10">
         <div
           class="flex justify-between items-center border-[3px] border-[#7ba5c3] px-10 py-3 bg-white rounded-full shadow-md"
@@ -421,7 +464,9 @@
         </svg>
       </button>
 
-      <div class="flex gap-8 max-w-6xl mx-auto -mt-20">
+      <div
+        class="flex flex-col lg:flex-row gap-6 sm:gap-7 md:gap-8 max-w-6xl mx-auto"
+      >
         <div class="flex-1 border-2 border-[#7ba5c3] rounded-3xl p-8 bg-white">
           <h2 class="text-[#5175A0] font-bold text-2xl mb-6">
             DATOS PERSONALES
@@ -570,6 +615,34 @@
         paginaPrincipal.classList.remove("hidden");
         window.scrollTo(0, 0);
       });
+
+      const menuBtn2 = document.getElementById("menuBtn2");
+      if (menuBtn2) {
+        const menu2Dropdown = document.createElement("div");
+        menu2Dropdown.className =
+          "hidden absolute top-full right-0 mt-4 bg-white border-[3px] border-[#7ba5c3] rounded-3xl shadow-lg py-4 px-6 z-10 w-48";
+        menu2Dropdown.innerHTML = `
+          <nav class="flex flex-col gap-3">
+            <a href="#sonrisa" class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors">Tu Sonrisa</a>
+            <a href="#agendar" class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors">Agendar</a>
+            <a href="#nosotros" class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors">Sobre nosotros</a>
+          </nav>
+        `;
+        menuBtn2.parentElement.appendChild(menu2Dropdown);
+
+        menuBtn2.addEventListener("click", () => {
+          menu2Dropdown.classList.toggle("hidden");
+        });
+
+        document.addEventListener("click", (e) => {
+          if (
+            !menuBtn2.contains(e.target) &&
+            !menu2Dropdown.contains(e.target)
+          ) {
+            menu2Dropdown.classList.add("hidden");
+          }
+        });
+      }
     </script>
   </body>
 </html>
