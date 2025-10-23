@@ -6,8 +6,8 @@
     <title>Consulta Dental</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <header class="bg-[#EAEDF3]">
-    <div class="Pagina1 px-20 pt-20">
+  <body class="bg-[#EAEDF3]">
+    <div class="Pagina1 px-20 pt-20 w-auto h-[832px]">
       <div
         class="Menu1 flex justify-between items-center border-[3px] border-[#7ba5c3] px-10 py-3 bg-white rounded-full max-w-[620px] shadow-md relative"
       >
@@ -82,34 +82,34 @@
         </div>
       </div>
     </div>
-    <div class="Pagina2 px-20 pt-20 relative">
-      <header class="sticky top-6 z-20">
-      <div class="Menu2 flex justify-between items-center border-[3px] border-[#7ba5c3] px-10 py-3 bg-white rounded-full shadow-md backdrop-blur-sm"
-    >
-        <img
-          src="https://raw.githubusercontent.com/valeval7/Practicas/6df9610117feb8eb1597c6999923c24b514a291e/12%20Desarrollo%20de%20Página%20Web/Resources/DentalCare.svg"
-          alt="DentalCare MX Logo"
-          class="h-[60px]"
-        />
-        <nav class="flex gap-8">
-          <a
-            href="#sonrisa"
-            class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
-            >Tu Sonrisa</a
-          >
-          <a
-            href="#agendar"
-            class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
-            >Agendar</a
-          >
-          <a
-            href="#nosotros"
-            class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
-            >Sobre nosotros</a
-          >
-        </nav>
-        
-      </div>
+    <div class="Pagina2 px-20 pt-20 h-[1800px]">
+      <header class="sticky top-0 z-20">
+        <div
+          class="Menu2 flex justify-between items-center border-[3px] border-[#7ba5c3] px-10 py-3 bg-white rounded-full shadow-md backdrop-blur-sm"
+        >
+          <img
+            src="https://raw.githubusercontent.com/valeval7/Practicas/6df9610117feb8eb1597c6999923c24b514a291e/12%20Desarrollo%20de%20Página%20Web/Resources/DentalCare.svg"
+            alt="DentalCare MX Logo"
+            class="h-[60px]"
+          />
+          <nav class="flex gap-8">
+            <a
+              href="#sonrisa"
+              class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
+              >Tu Sonrisa</a
+            >
+            <a
+              href="#agendar"
+              class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
+              >Agendar</a
+            >
+            <a
+              href="#nosotros"
+              class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
+              >Sobre nosotros</a
+            >
+          </nav>
+        </div>
       </header>
       <div class="Texto2 mt-10 text-center">
         <h1 class="text-[#5175A0] font-bold mb-4 leading-[1.15] text-[56px]">
@@ -261,8 +261,112 @@
           </p>
         </div>
       </div>
+      <div class="px-20 pt-20">
+        <div class="flex gap-16">
+          <div class="w-[450px] mt-7">
+            <h1 class="text-[#5175A0] font-bold text-[56px] mb-6 leading-tight">
+              VISÍTANOS
+            </h1>
+            <p class="text-[#5175A0] text-[18px] italic mb-12">
+              Descubre nuestras diversas clínicas, convenientemente ubicadas
+              para atenderte en zona metropolitana
+            </p>
+
+            <div class="space-y-10">
+              <div class="flex gap-4 text-[#5175A0]">
+                <svg
+                  class="w-8 h-8 text-[#5DABDA] flex-shrink-0 mt-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <div>
+                  <p class="font-bold text-xl mb-1">Zapopan</p>
+                  <p class="text-base italic">
+                    Av. Patria No. 1891, Jardines Universidad, C.P. 45110,
+                    Zapopan, Jalisco
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 text-[#5175A0]">
+                <svg
+                  class="w-8 h-8 text-[#5DABDA] flex-shrink-0 mt-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <div>
+                  <p class="font-bold text-xl mb-1">Guadalajara (Centro)</p>
+                  <p class="text-base italic">
+                    Calle Juárez No. 234, Col. Centro, C.P. 44100, Guadalajara,
+                    Jalisco
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <img
+              src="Resources/clinica.svg"
+              alt="Clínica Dental"
+              class="w-[1200px] h-[512px]"
+            />
+
+            <div
+              class="absolute bottom-10 right-10 bg-white rounded-[24px] shadow-2xl p-8 w-[300px]"
+            >
+              <h3 class="text-[#5175A0] font-bold text-[22px] mb-6">
+                Días laborales
+              </h3>
+              <div class="flex items-center gap-3 mb-4 text-[#5175A0]">
+                <svg
+                  class="w-6 h-6 text-[#5DABDA]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                <p class="font-semibold text-lg">Lunes-Sábado</p>
+              </div>
+              <div class="flex items-center gap-3 text-[#5175A0]">
+                <svg
+                  class="w-6 h-6 text-[#5DABDA]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <p class="text-lg">9:00 am - 20:00 pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
 
     <script>
       const menuBtn = document.getElementById("menuBtn");
