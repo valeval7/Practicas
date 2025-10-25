@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consulta Dental</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-      .hide-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .hide-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-[#EAEDF3]">
     <div class="PaginaPrincipal">
@@ -32,16 +24,14 @@
             />
           </div>
           <button
-            id="menuBtn"
-            class="flex flex-col gap-1.5 hover:opacity-70 transition-opacity"
+            class="menuBtn flex flex-col gap-1.5 hover:opacity-70 transition-opacity"
           >
             <span class="w-6 sm:w-7 md:w-8 h-0.5 bg-[#7ba5c3] rounded"></span>
             <span class="w-6 sm:w-7 md:w-8 h-0.5 bg-[#7ba5c3] rounded"></span>
             <span class="w-6 sm:w-7 md:w-8 h-0.5 bg-[#7ba5c3] rounded"></span>
           </button>
           <div
-            id="menuDropdown"
-            class="hidden absolute top-full right-0 mt-4 bg-white border-[3px] border-[#7ba5c3] rounded-3xl shadow-lg py-4 px-6 z-10"
+            class="menuDropdown hidden absolute top-full right-0 mt-4 bg-white border-[3px] border-[#7ba5c3] rounded-3xl shadow-lg py-4 px-6 z-10"
           >
             <nav class="flex flex-col gap-3">
               <a
@@ -53,11 +43,6 @@
                 href="#agendar"
                 class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
                 >Agendar</a
-              >
-              <a
-                href="#nosotros"
-                class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
-                >Sobre nosotros</a
               >
             </nav>
           </div>
@@ -128,23 +113,16 @@
                 class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
                 >Agendar</a
               >
-              <a
-                href="#nosotros"
-                class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
-                >Sobre nosotros</a
-              >
             </nav>
             <button
-              id="menuBtn2"
-              class="lg:hidden flex flex-col gap-1.5 hover:opacity-70 transition-opacity"
+              class="menuBtn lg:hidden flex flex-col gap-1.5 hover:opacity-70 transition-opacity"
             >
               <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
               <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
               <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
             </button>
             <div
-              id="menuDropdown2"
-              class="hidden absolute top-full right-0 mt-4 bg-white border-[3px] border-[#7ba5c3] rounded-3xl shadow-lg py-4 px-6 z-10 w-48"
+              class="menuDropdown hidden absolute top-full right-0 mt-4 bg-white border-[3px] border-[#7ba5c3] rounded-3xl shadow-lg py-4 px-6 z-10 w-48"
             >
               <nav class="flex flex-col gap-3">
                 <a
@@ -156,11 +134,6 @@
                   href="#agendar"
                   class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
                   >Agendar</a
-                >
-                <a
-                  href="#nosotros"
-                  class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
-                  >Sobre nosotros</a
                 >
               </nav>
             </div>
@@ -451,7 +424,7 @@
     <div
       class="Pagina3 hidden px-4 sm:px-8 md:px-12 lg:px-20 pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-12"
     >
-      <header class="sticky top-0 z-20 mb-10">
+      <header class="sticky top-0 z-20 -mt-13">
         <div
           class="flex justify-between items-center border-[3px] border-[#7ba5c3] px-10 py-3 bg-white rounded-full shadow-md"
         >
@@ -471,17 +444,35 @@
               class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
               >Agendar</a
             >
-            <a
-              href="#nosotros"
-              class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
-              >Sobre nosotros</a
-            >
           </nav>
+          <button
+            class="menuBtn lg:hidden flex flex-col gap-1.5 hover:opacity-70 transition-opacity"
+          >
+            <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
+            <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
+            <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
+          </button>
+          <div
+            class="menuDropdown hidden absolute top-full right-0 mt-4 bg-white border-[3px] border-[#7ba5c3] rounded-3xl shadow-lg py-4 px-6 z-10 w-48"
+          >
+            <nav class="flex flex-col gap-3">
+              <a
+                href="#sonrisa"
+                class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
+                >Tu Sonrisa</a
+              >
+              <a
+                href="#agendar"
+                class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
+                >Agendar</a
+              >
+            </nav>
+          </div>
         </div>
       </header>
+
       <button
-        id="backBtn"
-        class="bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all mb-10"
+        class="backBtn rounded-full p-3 shadow-lg hover:shadow-xl transition-all mb-10 bg-white mt-10"
       >
         <svg
           class="w-6 h-6 text-[#5175A0]"
@@ -499,7 +490,7 @@
       </button>
 
       <div
-        class="flex flex-col lg:flex-row gap-6 sm:gap-7 md:gap-8 max-w-6xl mx-auto"
+        class="flex flex-col lg:flex-row gap-6 sm:gap-7 md:gap-8 max-w-6xl mx-auto -mt-5"
       >
         <div class="flex-1 border-2 border-[#7ba5c3] rounded-3xl p-8 bg-white">
           <h2 class="text-[#5175A0] font-bold text-2xl mb-6">
@@ -599,37 +590,281 @@
           class="bg-[#5DABDA] hover:bg-[#4a9ac4] text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all flex items-center gap-2"
         >
           Confirmar cita
-          <!-- <svg
-            class="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            />
-          </svg> -->
         </button>
       </div>
     </div>
 
+    <!-- Pagina:"Tu sonrisa: digrama con posibles molestias en cada diente" -->
+    <div
+      class="Pagina4 hidden px-4 sm:px-8 md:px-12 lg:px-20 pt-8 sm:pt-12 md:pt-16 lg:pt-20 pb-12"
+    >
+      <header class="sticky top-0 z-20 mb-5 -mt-13">
+        <div
+          class="flex justify-between items-center border-[3px] border-[#7ba5c3] px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 bg-white rounded-full shadow-md"
+        >
+          <img
+            src="https://raw.githubusercontent.com/valeval7/Practicas/6df9610117feb8eb1597c6999923c24b514a291e/12%20Desarrollo%20de%20Página%20Web/Resources/DentalCare.svg"
+            alt="DentalCare MX Logo"
+            class="h-[35px] sm:h-[45px] md:h-[55px] lg:h-[60px]"
+          />
+          <nav class="hidden lg:flex gap-6 xl:gap-8">
+            <a
+              href="#sonrisa"
+              class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
+              >Tu Sonrisa</a
+            >
+            <a
+              href="#agendar"
+              class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
+              >Agendar</a
+            >
+            <a
+              href="#nosotros"
+              class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
+              >Sobre nosotros</a
+            >
+          </nav>
+          <button
+            class="menuBtn lg:hidden flex flex-col gap-1.5 hover:opacity-70 transition-opacity"
+          >
+            <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
+            <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
+            <span class="w-6 sm:w-7 h-0.5 bg-[#7ba5c3] rounded"></span>
+          </button>
+          <div
+            class="menuDropdown hidden absolute top-full right-0 mt-4 bg-white border-[3px] border-[#7ba5c3] rounded-3xl shadow-lg py-4 px-6 z-10 w-48"
+          >
+            <nav class="flex flex-col gap-3">
+              <a
+                href="#sonrisa"
+                class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
+                >Tu Sonrisa</a
+              >
+              <a
+                href="#agendar"
+                class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors"
+                >Agendar</a
+              >
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <button
+        class="backBtn rounded-full p-3 shadow-lg hover:shadow-xl transition-all mb-10 bg-white"
+      >
+        <svg
+          class="w-6 h-6 text-[#5175A0]"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+
+      <div
+        class="flex flex-col lg:flex-row gap-6 sm:gap-7 md:gap-8 max-w-6xl mx-auto -mt-20"
+      >
+        <div class="flex-1 border-2 border-[#7ba5c3] rounded-3xl p-8 bg-white">
+          <h2 class="text-[#5175A0] font-bold text-2xl mb-6">
+            ¿Qué le duele en sus Dientes?
+          </h2>
+          <div class="flex flex-col lg:flex-row gap-6">
+            <div class="w-full lg:w-[549px] mx-auto">
+              <div class="dental-map-wrapper flex justify-center">
+                <img
+                  src="12 Desarrollo de Página Web/Resources/Dientes/diagrama.svg"
+                  alt="Diagrama Dental Superior"
+                  class="w-full h-auto max-w-[549px]"
+                />
+                <section
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                >
+                  <img
+                    src="12 Desarrollo de Página Web/Resources/Dientes/1.svg"
+                    alt="Diente Sup 1"
+                    onclick="openModal('modal-sup-1', 'Diente Superior 1')"
+                    class="hotspot"
+                    style="top: 17%; left: 45.5%; width: 5%; height: 5%"
+                  />
+                  <img
+                    src="12 Desarrollo de Página Web/Resources/Dientes/2.svg"
+                    alt="Diente Sup 2"
+                    onclick="openModal('modal-sup-2', 'Diente Superior 2')"
+                    class="hotspot"
+                    style="top: 18%; left: 37.5%; width: 5%; height: 5%"
+                  />
+                  <img
+                    src="12 Desarrollo de Página Web/Resources/Dientes/3.svg"
+                    alt="Diente Sup 3"
+                    onclick="openModal('modal-sup-3', 'Diente Superior 3')"
+                    class="hotspot"
+                    style="top: 21%; left: 31%; width: 5%; height: 5%"
+                  />
+                  <img
+                    src="12 Desarrollo de Página Web/Resources/Dientes/4.svg"
+                    alt="Diente Sup 4"
+                    onclick="openModal('modal-sup-4', 'Diente Superior 4')"
+                    class="hotspot"
+                    style="top: 25%; left: 26%; width: 5%; height: 5%"
+                  />
+                  <img
+                    src="12 Desarrollo de Página Web/Resources/Dientes/5.svg"
+                    alt="Diente Sup 5"
+                    onclick="openModal('modal-sup-5', 'Diente Superior 5')"
+                    class="hotspot"
+                    style="top: 29%; left: 22%; width: 5%; height: 5%"
+                  />
+                  <img
+                    src="12 Desarrollo de Página Web/Resources/Dientes/6.svg"
+                    alt="Diente Sup 6"
+                    onclick="openModal('modal-sup-6', 'Diente Superior 6')"
+                    class="hotspot"
+                    style="top: 33%; left: 20%; width: 5%; height: 5%"
+                  />
+                  <img
+                    src="12 Desarrollo de Página Web/Resources/Dientes/7.svg"
+                    alt="Diente Sup 7"
+                    onclick="openModal('modal-sup-7', 'Diente Superior 7')"
+                    class="hotspot"
+                    style="top: 38%; left: 18%; width: 5%; height: 5%"
+                  />
+                  <img
+                    src="12 Desarrollo de Página Web/Resources/Dientes/8.svg"
+                    alt="Diente Sup 8"
+                    onclick="openModal('modal-sup-8', 'Diente Superior 8')"
+                    class="hotspot"
+                    style="top: 43%; left: 17%; width: 5%; height: 5%"
+                  />
+
+                  <div id="modal-sup-1" class="modal">
+                    <span class="close" onclick="closeModal('modal-sup-1')"
+                      >&times;</span
+                    >
+                    <img
+                      src="12 Desarrollo de Página Web/Resources/clinica.svg"
+                      alt="Diente Superior 1"
+                      class="modal-content"
+                    />
+                    <div class="caption"></div>
+                  </div>
+                  <div id="modal-sup-2" class="modal">
+                    <span class="close" onclick="closeModal('modal-sup-2')"
+                      >&times;</span
+                    >
+                    <img
+                      src="foto2.jpg"
+                      alt="Diente Superior 2"
+                      class="modal-content"
+                    />
+                    <div class="caption"></div>
+                  </div>
+                  <div id="modal-sup-3" class="modal">
+                    <span class="close" onclick="closeModal('modal-sup-3')"
+                      >&times;</span
+                    >
+                    <img
+                      src="foto3.jpg"
+                      alt="Diente Superior 3"
+                      class="modal-content"
+                    />
+                    <div class="caption"></div>
+                  </div>
+                  <div id="modal-sup-4" class="modal">
+                    <span class="close" onclick="closeModal('modal-sup-4')"
+                      >&times;</span
+                    >
+                    <img
+                      src="foto4.jpeg"
+                      alt="Diente Superior 4"
+                      class="modal-content"
+                    />
+                    <div class="caption"></div>
+                  </div>
+                  <div id="modal-sup-5" class="modal">
+                    <span class="close" onclick="closeModal('modal-sup-5')"
+                      >&times;</span
+                    >
+                    <img
+                      src="foto5.jpeg"
+                      alt="Diente Superior 5"
+                      class="modal-content"
+                    />
+                    <div class="caption"></div>
+                  </div>
+                  <div id="modal-sup-6" class="modal">
+                    <span class="close" onclick="closeModal('modal-sup-6')"
+                      >&times;</span
+                    >
+                    <img
+                      src="foto6.jpeg"
+                      alt="Diente Superior 6"
+                      class="modal-content"
+                    />
+                    <div class="caption"></div>
+                  </div>
+                  <div id="modal-sup-7" class="modal">
+                    <span class="close" onclick="closeModal('modal-sup-7')"
+                      >&times;</span
+                    >
+                    <img
+                      src="foto7.jpeg"
+                      alt="Diente Superior 7"
+                      class="modal-content"
+                    />
+                    <div class="caption"></div>
+                  </div>
+                  <div id="modal-sup-8" class="modal">
+                    <span class="close" onclick="closeModal('modal-sup-8')"
+                      >&times;</span
+                    >
+                    <img
+                      src="foto8.jpeg"
+                      alt="Diente Superior 8"
+                      class="modal-content"
+                    />
+                    <div class="caption"></div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
-      const menuBtn = document.getElementById("menuBtn");
-      const menuDropdown = document.getElementById("menuDropdown");
+      const menuBtns = document.querySelectorAll(".menuBtn");
+      const menuDropdowns = document.querySelectorAll(".menuDropdown");
       const paginaPrincipal = document.querySelector(".PaginaPrincipal");
       const pagina3 = document.querySelector(".Pagina3");
-      const backBtn = document.getElementById("backBtn");
+      const pagina4 = document.querySelector(".Pagina4");
+      const backButtons = document.querySelectorAll(".backBtn");
 
-      menuBtn.addEventListener("click", () => {
-        menuDropdown.classList.toggle("hidden");
+      menuBtns.forEach((btn, i) => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          menuDropdowns[i]?.classList.toggle("hidden");
+        });
       });
 
       document.addEventListener("click", (e) => {
-        if (!menuBtn.contains(e.target) && !menuDropdown.contains(e.target)) {
-          menuDropdown.classList.add("hidden");
+        if (
+          ![...menuBtns, ...menuDropdowns].some((el) => el.contains(e.target))
+        ) {
+          menuDropdowns.forEach((d) => d.classList.add("hidden"));
         }
       });
 
@@ -639,43 +874,44 @@
             e.preventDefault();
             paginaPrincipal.classList.add("hidden");
             pagina3.classList.remove("hidden");
+            pagina4.classList.add("hidden");
+            window.scrollTo(0, 0);
+          });
+        } else if (el.textContent.includes("Tu Sonrisa")) {
+          el.addEventListener("click", (e) => {
+            e.preventDefault();
+            paginaPrincipal.classList.add("hidden");
+            pagina3.classList.add("hidden");
+            pagina4.classList.remove("hidden");
             window.scrollTo(0, 0);
           });
         }
       });
 
-      backBtn.addEventListener("click", () => {
-        pagina3.classList.add("hidden");
-        paginaPrincipal.classList.remove("hidden");
-        window.scrollTo(0, 0);
+      backButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          pagina3.classList.add("hidden");
+          pagina4.classList.add("hidden");
+          paginaPrincipal.classList.remove("hidden");
+          window.scrollTo(0, 0);
+        });
       });
 
-      const menuBtn2 = document.getElementById("menuBtn2");
-      if (menuBtn2) {
-        const menu2Dropdown = document.createElement("div");
-        menu2Dropdown.className =
-          "hidden absolute top-full right-0 mt-4 bg-white border-[3px] border-[#7ba5c3] rounded-3xl shadow-lg py-4 px-6 z-10 w-48";
-        menu2Dropdown.innerHTML = `
-          <nav class="flex flex-col gap-3">
-            <a href="#sonrisa" class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors">Tu Sonrisa</a>
-            <a href="#agendar" class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors">Agendar</a>
-            <a href="#nosotros" class="text-[#5175A0] hover:text-[#5DABDA] font-semibold transition-colors">Sobre nosotros</a>
-          </nav>
-        `;
-        menuBtn2.parentElement.appendChild(menu2Dropdown);
+      function openModal(modalId, caption) {
+        let modal = document.getElementById(modalId);
+        modal.style.display = "flex";
+        modal.classList.add("show");
+        let message = modal.querySelector(".caption");
+        message.innerText = caption;
+      }
 
-        menuBtn2.addEventListener("click", () => {
-          menu2Dropdown.classList.toggle("hidden");
-        });
-
-        document.addEventListener("click", (e) => {
-          if (
-            !menuBtn2.contains(e.target) &&
-            !menu2Dropdown.contains(e.target)
-          ) {
-            menu2Dropdown.classList.add("hidden");
-          }
-        });
+      function closeModal(modalId) {
+        let modal = document.getElementById(modalId);
+        modal.classList.remove("show");
+        setTimeout(function () {
+          modal.style.display = "none";
+          modal.querySelector(".caption").innerText = "";
+        }, 300);
       }
     </script>
   </body>
