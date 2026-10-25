@@ -8,10 +8,8 @@
     <path d="M150.8 15.5C150.3 15.5 149.9 15.8 149.8 16.3L147.2 22.8C147.1 23 147 23.2 147 23.4V30H144.9C144.4 30 143.9 30.5 143.9 31V35C143.9 35.5 144.4 36 144.9 36H147V56C147 56.6 147.4 57 148 57C148.6 57 149 56.6 149 56V36H151.1C151.6 36 152.1 35.5 152.1 35V31C152.1 30.5 151.6 30 151.1 30H149V23.7L151.4 17.7C151.6 17.2 151.4 16.6 150.9 16.4C150.9 15.8 150.8 15.5 150.8 15.5ZM145.9 32H150.1V34H145.9V32Z"/>
   </g>
 
-  <text x="126" y="91" fill="#354F8B"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="24" font-weight="400"
-        text-anchor="middle" letter-spacing="0">
-    General Dentistry
+    <text x="126" y="88" fill="#354F8B" font-family="system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="medium" text-anchor="middle" letter-spacing="0.3">
+    <tspan x="126" dy="0">General</tspan>
+    <tspan x="126" dy="25">Dentistry</tspan>
   </text>
 </svg>
