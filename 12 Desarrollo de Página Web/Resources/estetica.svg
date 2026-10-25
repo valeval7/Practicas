@@ -4,6 +4,6 @@
 
    <text x="126" y="88" fill="#354F8B" font-family="system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="medium" text-anchor="middle" letter-spacing="0.3">
     <tspan x="126" dy="0">Cosmetic</tspan>
-    <tspan x="126" dy="25">Dentistry</tspan>
+    <tspan x="126" dy="24">Dentistry</tspan>
   </text>
 </svg>
